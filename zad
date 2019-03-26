@@ -1,0 +1,11 @@
+k = []
+con = 0
+for i in input().split():
+  k.append(int(i))
+n = []
+for i in input().split():
+  n.append(int(i))
+if n[0] - k[0] >= 0 and n[0] - k[0] + n[1] >= 0 and k[0] + k[1] + k[2] - n[0] - n[1] - n[2] <= 0:
+  print("YES")
+else:
+  print("NO")  
